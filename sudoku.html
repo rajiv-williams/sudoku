@@ -1,7 +1,4 @@
-<!-- For each HTML file, please add the default HTML tags 
-    in the same way we did in the first lecture. 
-    (Then upload to GitHub)
--->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,12 +6,130 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sudoku Game</title>
+        <link rel="stylesheet" href="styles/sudoku.css">
     </head>
     <body>
-        <section class="game_board"></section>
-            <div class="game"><a href="#"><img src="images/undo.png" alt="Undo" /></a></div>
-            <div class="board">
-                <a href="#"><img src="images/logo.gif" alt="Sudoku" /></a>
-            </div>
+        <section class="sudoku_board">
+            <table id = "board">
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell">1</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">9</td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">4</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">2</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">8</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">5</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">3</td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell">2</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">4</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">1</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">1</td>
+                  <td class="board_cell">8</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">6</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell">3</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">8</td>
+                  <td class="board_cell"></td>
+                </tr>
+                <tr class="board_row">
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell">6</td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                  <td class="board_cell"></td>
+                </tr>
+            </table>
+
+            <table id = "palette">
+              <tr>
+                <td class = "choices">1</td>
+                <td class = "choices">2</td>
+                <td class = "choices">3</td>
+                <td class = "choices">4</td>
+                <td class = "choices">5</td>
+                <td class = "choices">6</td>
+                <td class = "choices">7</td>
+                <td class = "choices">8</td>
+                <td class = "choices">9</td>
+                <td class = "choices">
+                    <div>
+                      <a href="#"><img src="images/undo.png" alt="Undo" /></a>
+                    </div>
+                </td>
+              </tr>
+            </table>
+        </section>
     </body>
 </html>
