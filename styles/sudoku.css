@@ -9,7 +9,6 @@ body with no dot is the tag itself */
   #palette {
     margin-left:auto;
     margin-right:auto;
-    margin-top: 5px;
     border: 1px solid black;
     border-collapse: collapse;
   }
@@ -19,29 +18,29 @@ body with no dot is the tag itself */
   }
   td {
     text-align: center;
-    font-size: 40px;
-    width: 50px;
-    height: 50px;
+    font-size: 35px;
+    width: 55px;
+    height: 55px;
     border: 1px solid black;
     border-collapse: collapse;
     /* padding: 25px; */
   }
-  .board_row:first-child{
+  #board tr:first-child{
     border-top: 3px solid black;
   }
-  .board_row:nth-child(3n){
+  #board tr:nth-child(3n){
     border-bottom: 3px solid black;
   }
-  .board_cell:first-child{
+  #board td:first-child{
     border-left: 3px solid black;
   }
-  .board_cell:nth-child(3n){
+  #board td:nth-child(3n){
     border-right: 3px solid black;
   }
-  .board_cell:hover{
+  #board td:hover{
     background-color: #f5dd90;
   }
-  .choices:hover{
+  #palette td:hover{
     background-color: #f5dd90;
   }
   .user-input{
