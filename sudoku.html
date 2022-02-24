@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sudoku Center</a>
+                  <div class="nav-link active" >Sudoku Center</div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="sudoku.html">Play Game</a>
@@ -43,132 +43,26 @@
       <!--
         THE ACTUAL GAME
       -->
-  
+      <div>
+        <h1 id="winner"></h1>
+      </div>
+
         <section class="sudoku_board">
-            <table id = "board">
-                <tr class="board_row">
-                  <td></td>
-                  <td>1</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>9</td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td></td>
-                  <td>4</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>2</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td></td>
-                  <td>8</td>
-                  <td></td>
-                  <td></td>
-                  <td>5</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>3</td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td>2</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>4</td>
-                  <td></td>
-                  <td>1</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>8</td>
-                  <td></td>
-                  <td></td>
-                  <td>6</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td>3</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>8</td>
-                  <td></td>
-                </tr>
-                <tr class="board_row">
-                  <td></td>
-                  <td></td>
-                  <td>6</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <table id = "palette">
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>
-                    <div>
-                      <a href="#"><img src="images/undo.png" alt="Undo" /></a>
-                    </div>
-                </td>
-              </tr>
-            </table>
+          <table id="board"></table>
+          <br>
+          <br>
+          <table id ="palette">
+            <img id="undo_button" src="images/undo.png" alt="Undo"/>
+          </table>
+          <p id="printout"></p>
         </section>
 
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- JAVA SCRIPT -->
+        <script type="text/javascript" src="scripts/sudoku.js"></script>
+        
+        <!--BUNDLE-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
